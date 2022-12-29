@@ -15,7 +15,7 @@ namespace LineComparsionProblem
             Console.WriteLine("Enter y2 :- ");
             int y2 = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Enter a1 :- ");
+             Console.WriteLine("Enter a1 :- ");
             int a1 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter a2 :- ");
             int a2 = Convert.ToInt32(Console.ReadLine());
@@ -34,6 +34,20 @@ namespace LineComparsionProblem
             //Console.WriteLine("Equals = "+ (Length1==Length2));
             Console.WriteLine("Equals = " + Length1.Equals(Length2));
 
+
+            int compare = Length1.CompareTo(Length2);
+            if (compare > 0)
+            {
+                Console.WriteLine("Length of First line {0} is greater than {1} length of Second line.", Length1, Length2);
+            }
+            else if (compare < 0)
+            {
+                Console.WriteLine("Length of First line ( {0} )is less than ( {1} ) length of Second line.", Length1, Length2);
+            }
+            else
+            {
+                Console.WriteLine("Line Not compare");
+            }
 
 
         }
